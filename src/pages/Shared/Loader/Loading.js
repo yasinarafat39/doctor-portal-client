@@ -1,18 +1,18 @@
 import React from 'react';
-import { ThreeDots } from 'react-loader-spinner';
+import { FidgetSpinner } from 'react-loader-spinner';
 
 const Loading = () => {
     return (
         <div className='flex justify-center items-center max-h-screen'>
-            <ThreeDots
+            <FidgetSpinner
+                visible={true}
                 height="80"
                 width="80"
-                radius="9"
-                color="#19D3AE"
-                ariaLabel="three-dots-loading"
+                ariaLabel="dna-loading"
                 wrapperStyle={{}}
-                wrapperClassName=""
-                visible={true}
+                wrapperClass="dna-wrapper"
+                ballColors={['#ff0000', '#00ff00', '#0000ff']}
+                backgroundColor="#F4442E"
             />
         </div>
     );
